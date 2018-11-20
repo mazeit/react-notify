@@ -1,4 +1,4 @@
-import React, {Component, PropTypes} from 'react';
+import React, {Component} from 'react';
 import cn from 'classnames';
 import elementClass from 'element-class';
 import NotificationItem from './Item';
@@ -6,6 +6,7 @@ import Header from './header';
 import Content from './content';
 import Footer from './footer';
 import {cutString} from './utils';
+import PropTypes from 'prop-types';
 
 export default class ReduxnotificationCenter extends Component {
     static displayName = 'ReduxNotofication';

@@ -1,7 +1,8 @@
-import React, {Component, PropTypes} from 'react';
+import React, {Component} from 'react';
 import cn from 'classnames';
 import Tag from './Tag';
 import {cutString} from './utils';
+import PropTypes from 'prop-types';
 
 export default class NotificationItem extends Component {
     static displayName = 'NotificationItemComponent';
