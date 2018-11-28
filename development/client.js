@@ -15,6 +15,7 @@ class App extends Component {
         this.notificationOptions = {
             id: '__id',
             message: 'text',
+            body: 'body',
             new: 'active',
             date: 'startDate'
         };
@@ -24,6 +25,7 @@ class App extends Component {
                 __id: uiid.v1(),
                 title: loremIpsum({count: 1}),
                 text: loremIpsum({count: 3}),
+                body: (<h1>{loremIpsum({count: 3})}</h1>),
                 active: true,
                 tags: [{
                     type: 'success',

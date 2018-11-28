@@ -114,6 +114,7 @@ export default class ReduxnotificationCenter extends Component {
             id: this.props.mapToItem.id || 'id',
             title: this.props.mapToItem.title || 'title',
             message: this.props.mapToItem.message || 'message',
+            body: this.props.mapToItem.body || 'body',
             date: this.props.mapToItem.date || 'date',
             new: this.props.mapToItem.new || 'new'
         };
@@ -179,7 +180,7 @@ export default class ReduxnotificationCenter extends Component {
                                 <Header>{this.state.current && this.state.current[this.mapOptions().title]}</Header>
                                 <Content {...this.props}>
                                     <div className="desc">
-                                        {this.state.current && this.state.current[this.mapOptions().message]}
+                                        {this.state.current && this.state.current[this.mapOptions().body]}
                                     </div>
                                 </Content>
                                 <Footer>
