@@ -150,8 +150,8 @@ export default class ReduxnotificationCenter extends Component {
     render() {
         return (
             <div className={cn('react-notification-center', 'light-theme', {hide: !this.props.visible})}>
-                <div className={cn('r-notifications-icon', {active: this.getUnreadLength()})} ref="notificationIcon">
-                    {this.getUnreadLength() > 0 && this.getUnreadLength()}
+                <div className={cn('r-notifications-icon', 'active')} ref="notificationIcon">
+                    {this.getUnreadLength() > 0 ? this.getUnreadLength() : '0'}
                 </div>
                 {this.state.showNotification &&
                     <div className={cn('rr-wrapper', this.props.position)} ref="notificationHolder">
